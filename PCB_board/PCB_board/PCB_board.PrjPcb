@@ -90,23 +90,6 @@ GenerateClassCluster=0
 DocumentUniqueId=CNGSWFSJ
 
 [Document4]
-DocumentPath=2-Amplifier.Harness
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document5]
 DocumentPath=3-Connectors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -123,7 +106,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NQATBESS
 
-[Document6]
+[Document5]
 DocumentPath=3-Connectors.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -140,8 +123,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
-DocumentPath=PCB_class.PcbDoc
+[Document6]
+DocumentPath=2-Amplifier.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -155,7 +138,45 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=CPAMCEVH
+DocumentUniqueId=
+
+[Document7]
+DocumentPath=1-Regulator.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document8]
+DocumentPath=PCB_Class.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=QWBJAEWB
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for PCB_board\Design Rule Check - PCB_Class.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Default Configuration
@@ -331,7 +352,7 @@ OutputDefault4=0
 [OutputGroup3]
 Name=Documentation Outputs
 Description=
-TargetPrinter=HP Ink Tank 310 series
+TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembler Source Print
 OutputName1=Assembler Source Prints
@@ -1147,11 +1168,14 @@ PartTypes=0
 
 [NetInfos]
 Net1=NetName=5V|NetColor=$00FFFF6E
-Net2=NetName=IN_POS|NetColor=$00FF6EFF
-Net3=NetName=IN_NEG|NetColor=$00A6D07C
-Net4=NetName=OUTPUT|NetColor=$00FF6E6E
-Net5=NetName=GND|NetColor=$006EFF6E
-Net6=NetName=12V|NetColor=$006E6EFF
+Net2=NetName=V_SOURCE|NetColor=$00FF6EFF
+Net3=NetName=S_IN_P|NetColor=$003042C6
+Net4=NetName=S_IN_N|NetColor=$00D1AC7C
+Net5=NetName=12V|NetColor=$00FF6EFF
+Net6=NetName=IN_POS|NetColor=$00FF6EFF
+Net7=NetName=IN_NEG|NetColor=$00A6D07C
+Net8=NetName=OUTPUT|NetColor=$00FF6E6E
+Net9=NetName=GND|NetColor=$006EFF6E
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
@@ -1160,4 +1184,7 @@ ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Co
 ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions4=Kind=Differential Pair|MinPercent=50|MinMatch=1|ShowMatch=0|Confirm=0|UseName=0|InclAllRules=0
 ComparisonOptions5=Kind=Code Memory|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
+
+[SmartPDF]
+PageOptions=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
